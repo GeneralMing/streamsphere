@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: streamsphere-config
+  namespace: streamsphere
+data:
+  NODE_ENV: "production"
+  REDIS_HOST: "redis-service"
+  REDIS_PORT: "6379"
+  KAFKA_BROKERS: "kafka-service:9092"
+  POSTGRES_HOST: "postgres-service"
+  POSTGRES_PORT: "5432"
+  POSTGRES_DB: "streamsphere"
+  WEBSOCKET_PORT: "8080"
+  METRICS_PORT: "9090"
